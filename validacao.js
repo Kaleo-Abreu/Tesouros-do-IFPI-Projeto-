@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     const button = form.querySelector("button");
 
-    // Inicia botão como desativado
+    // Estado inicial
     button.disabled = true;
     button.style.backgroundColor = "#999";
+    button.style.cursor = "not-allowed";
 
     // Máscara + validação em tempo real
     cpfInput.addEventListener("input", function (e) {
@@ -31,11 +32,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Impede envio se inválido (segurança extra)
+    // Se for válido, redireciona para termos.html
     form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
         const cpf = cpfInput.value.replace(/\D/g, "");
-        if (!validarCPF(cpf)) {
-            e.preventDefault();
+
+        if (validarCPF(cpf)) {
+            // Salva CPF temporariamente (opcional)
+            localStorage.setItem("cpf_validado", cpf);
+
+            // Redireciona para página de termos
+            window.location.href = "termos.html";
         }
     });
 
