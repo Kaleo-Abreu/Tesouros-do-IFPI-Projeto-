@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     botao.addEventListener("click", function () {
         if (checkbox.checked) {
-            window.location.href = "templates/votacao.html";
+            window.location.href = "votacao.html";
         }
     });
 });
