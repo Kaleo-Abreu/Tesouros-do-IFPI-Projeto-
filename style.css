@@ -8,7 +8,7 @@
 /* Fundo azul escuro e centralização */
 body {
     height: 100vh;
-    background-color: #0b1f3a; /* Azul escuro */
+    background-color: #0B3D2E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,12 +27,12 @@ body {
 /* Título */
 h2 {
     margin-bottom: 20px;
-    color: #0b1f3a;
+    color: #0B3D2E;
 }
 
 /* Campo CPF */
 input {
-    width: 250px;
+    width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
