@@ -84,11 +84,11 @@ votacao-tesouros-ifpi-2026/
 ```
 
 
-📄 Licença
+# 📄 Licença
 
 Este projeto está sob a licença MIT.
 Consulte o arquivo LICENSE para mais informações.
 
-🙏 Agradecimentos
+# 🙏 Agradecimentos
 
 Agradecemos ao IFPI pela organização do evento Tesouros do IFPI 2026 e pela oportunidade de desenvolver este sistema de votação digital.
