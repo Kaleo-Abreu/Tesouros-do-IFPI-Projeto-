@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Estado inicial
     button.disabled = true;
-    button.style.backgroundColor = "#999";
+    
     button.style.cursor = "not-allowed";
 
     // Máscara + validação em tempo real
@@ -23,12 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (validarCPF(cpfLimpo)) {
             button.disabled = false;
-            button.style.backgroundColor = "green";
+            button.style.backgroundColor = "green";            
             button.style.cursor = "pointer";
         } else {
             button.disabled = true;
-            button.style.backgroundColor = "#999";
             button.style.cursor = "not-allowed";
+
+            
         }
     });
 
@@ -43,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("cpf_validado", cpf);
 
             // Redireciona para página de termos
-            window.location.href = "termos.html";
+            window.location.href = "templates/termos.html";
         }
     });
 
