@@ -1,8 +1,10 @@
-🗳️ Votação — Tesouros do IFPI 2026
+# 🗳️ Votação — Tesouros do IFPI 2026
 
 Sistema web desenvolvido para o evento Tesouros do IFPI 2026, com o objetivo de permitir a indicação e votação de membros da comunidade do IFPI em diferentes categorias institucionais.
 
-📌 Sobre o Projeto
+---
+
+# 📌 Sobre o Projeto
 
 A aplicação consiste em um formulário de votação organizado por categorias, onde o participante pode:
 
@@ -25,25 +27,19 @@ O participante preenche seus dados e informa os dados da pessoa indicada.
 
 O formulário é dividido nas seguintes categorias:
 
-Aluno Atual
+- Aluno Atual
+- Ex-Aluno
+- Professor Atual
+- Ex-Professor
+- Técnico Administrativo Atual
+- Ex-Técnico
+- Funcionário Terceirizado
 
-Ex-Aluno
-
-Professor Atual
-
-Ex-Professor
-
-Técnico Administrativo Atual
-
-Ex-Técnico
-
-Funcionário Terceirizado
-
-🔍 Modal de Revisão
+##  🔍 Modal de Revisão
 
 Antes de finalizar, o usuário pode revisar todas as informações inseridas.
 
-✅ Confirmação de Votação
+## ✅ Confirmação de Votação
 
 Após confirmação, o usuário é redirecionado para a página de confirmação.
 
@@ -51,30 +47,22 @@ Após confirmação, o usuário é redirecionado para a página de confirmação
 
 A votação só é finalizada se todos os campos obrigatórios forem preenchidos corretamente.
 
-🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 
-HTML5 — Estrutura e marcação semântica
+**HTML5 — Estrutura e marcação semântica**
 
-CSS3 — Estilização personalizada
+**CSS3 — Estilização personalizada**
 
-Bootstrap 5 — Layout responsivo e componentes visuais
+**Bootstrap 5 — Layout responsivo e componentes visuais**
 
-JavaScript — Controle das abas, modal de revisão e validações
+**JavaScript — Controle das abas, modal de revisão e validações**
 
-Popper.js — Posicionamento de elementos interativos (integrado ao Bootstrap)
+**Popper.js — Posicionamento de elementos interativos (integrado ao Bootstrap)**
 
-💻 Como Executar o Projeto Localmente
-1️⃣ Clone o repositório
-git clone https://github.com/seu-usuario/votacao-tesouros-ifpi-2026.git
-2️⃣ Acesse o diretório
-cd votacao-tesouros-ifpi-2026
-3️⃣ Execute o projeto
 
-Abra o arquivo index.html no navegador de sua preferência.
+# 📁 Estrutura do Projeto
 
-Não é necessário servidor local ou backend — o projeto é 100% front-end.
-
-📁 Estrutura do Projeto
+```
 votacao-tesouros-ifpi-2026/
 │
 ├── index.html
@@ -93,25 +81,8 @@ votacao-tesouros-ifpi-2026/
 │   └── termos.js
 │
 └── README.md
-🤝 Como Contribuir
+```
 
-Faça um fork do repositório
-
-Crie uma branch para sua feature:
-
-git checkout -b feature/nome-da-feature
-
-Faça as alterações desejadas
-
-Commit suas mudanças:
-
-git commit -m "feat: descrição da alteração"
-
-Envie para sua branch:
-
-git push origin feature/nome-da-feature
-
-Abra um Pull Request
 
 📄 Licença
 
