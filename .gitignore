@@ -1,2 +1,4 @@
 # Ignorar todos os arquivos PHP
 *.php
+/php/
+/php
