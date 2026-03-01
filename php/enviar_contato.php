@@ -26,7 +26,8 @@ $sql = "INSERT INTO contatos (nome, email, telefone, assunto, mensagem)
 
 // Verifica se a consulta foi executada com sucesso
 if ($conn->query($sql) === TRUE) {
-    echo "Mensagem enviada com sucesso!";
+    header('Location: /templates/contato_enviado.html');
+    exit; // Encerra o script após o redirecionamento
 } else {
     echo "Erro ao enviar a mensagem: " . $conn->error;
 }
