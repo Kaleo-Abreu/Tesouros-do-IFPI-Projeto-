@@ -16,15 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Aplica a máscara
             if (value.length > 6) {
-                value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, "($1) $2-$3");
-            } 
-            else if (value.length > 2) {
-                value = value.replace(/(\d{2})(\d{0,5})/, "($1) $2");
-            } 
-            else if (value.length > 0) {
-                value = value.replace(/(\d{0,2})/, "($1");
+                value = value.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");  // Máscara para "(XX) XXXXX-XXXX"
+            } else if (value.length > 2) {
+                value = value.replace(/(\d{2})(\d{1,5})/, "($1) $2");  // Máscara para "(XX) XXXXX"
+            } else if (value.length > 0) {
+                value = value.replace(/(\d{0,2})/, "($1");  // Máscara para "(XX"
             }
 
+            // Define o valor formatado no input
             e.target.value = value;
 
         });

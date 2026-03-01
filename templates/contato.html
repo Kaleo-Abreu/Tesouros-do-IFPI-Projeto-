@@ -7,8 +7,6 @@
     <link rel="icon" type="image/png" href="/img/icon.png">
     <link rel="stylesheet" href="/css/style.css">
     <title>Contato</title>
-
-
 </head>
 
 <body>
@@ -19,30 +17,31 @@
         
         <h2 class="text-center mb-4 text-success">Fale Conosco</h2>
 
-        <form>
+        <!-- Alterei os IDs duplicados para únicos e corrigi o 'name' nos campos para envio correto -->
+        <form action="/php/enviar_contato.php" method="POST">
 
             <!-- Nome -->
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome completo: </label>
-                <input id="nome" type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" required>
+                <input id="nome" type="text" class="form-control" name="nome" placeholder="Digite seu nome completo" required>
             </div>
 
             <!-- Email -->
             <div class="mb-3">
                 <label for="email" class="form-label">E-mail: </label>
-                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu e-mail" required>
             </div>
 
             <!-- Telefone -->
             <div class="mb-3">
                 <label for="telefone" class="form-label">Telefone: </label>
-                <input type="tel" class="form-control" id="telefone" placeholder="(99) 99999-9999">
+                <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="(99) 99999-9999">
             </div>
 
             <!-- Assunto -->
             <div class="mb-3">
                 <label for="assunto" class="form-label">Assunto: </label>
-                <select class="form-select" id="assunto" required>
+                <select class="form-select" name="assunto" id="assunto" required>
                     <option value="">Selecione uma opção</option>
                     <option value="critica">Críticas</option>
                     <option value="sugestao">Sugestões</option>
@@ -55,7 +54,7 @@
             <!-- Mensagem -->
             <div class="mb-4">
                 <label for="mensagem" class="form-label">Mensagem:</label>
-                <textarea class="form-control" id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                <textarea class="form-control" name="mensagem" id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
             </div>
 
             <!-- Botões -->
