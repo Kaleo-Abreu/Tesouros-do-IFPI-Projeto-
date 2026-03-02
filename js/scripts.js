@@ -83,5 +83,5 @@ document.getElementById('modalConfirmacao')
 // Função chamada ao confirmar
 function finalizarVotacao() {
     alert("Votação confirmada com sucesso!");
-    window.location.href = "confirmacao.html";
+    window.location.href = "obrigado.html";
 }
